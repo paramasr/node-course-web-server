@@ -37,14 +37,14 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/', (request, response) => {
 	//response.send('<h1>Hello Express!</h1>');
-	response.render('Home.hbs', {
+	response.render('home.hbs', {
 		title: 'Home Page',
 		pageTitle: 'Home Page',
 		welcomeMessage: 'Welcome to my first webpage!'
 	});
 });
 app.get('/about', (request, response) => {
-	response.render('About.hbs', {
+	response.render('about.hbs', {
 		title: 'About Page',
 		pageTitle: 'About Page'
 	});
